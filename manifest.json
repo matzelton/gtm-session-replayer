@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "GTM Preview Session Recorder & Replayer (MVP)",
+  "version": "0.3.1",
+  "description": "Record & replay browsing sessions and dataLayer events to reproduce GTM Tag Assistant Preview traces (stable across MV3 service worker restarts).",
+  "action": {
+    "default_title": "GTM Session",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

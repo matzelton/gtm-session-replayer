@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GTM Session</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>GTM Session</h1>
+
+      <div class="row">
+        <input id="sessionName" placeholder="Session-Name (z.B. PDP→Checkout)" />
+      </div>
+
+      <div class="row">
+        <button id="start">Start Record</button>
+        <button id="stop" disabled>Stop & Save</button>
+      </div>
+
+      <h2>Gespeicherte Sessions</h2>
+      <div class="meta" style="margin: 6px 0 10px;">
+        Replay läuft im <strong>aktuellen Tab</strong> (Preview-gekoppelt). Optional kannst du „Start-URL laden“ aktivieren.
+      </div>
+      <label class="meta" style="display:flex; gap:8px; align-items:center; margin-bottom:10px;">
+        <input id="navToStart" type="checkbox" />
+        Start-URL vor Replay laden
+      </label>
+
+      <div id="list"></div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

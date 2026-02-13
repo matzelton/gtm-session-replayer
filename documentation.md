@@ -13,7 +13,7 @@ Jede Änderung muss manuell getestet werden – oft durch wiederholtes Durchklic
 
 Das ist:
 
-- zeitaufwendig
+- zeitaufwändig
 - fehleranfällig
 - nicht reproduzierbar
 - schwer dokumentierbar
@@ -110,5 +110,6 @@ Sie bringt:
 ✔ Geschwindigkeit  
 ✔ Stabilität  
 ✔ Transparenz  
+
 
 in den GTM-Testprozess.
